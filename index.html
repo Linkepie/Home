@@ -1,274 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="website icon" type="png" href="logoL.jpg">
-
-    <title>Linkspie</title>
-</head>
-<body>
-
-    <div class="popup">
-        <div class="popup-content">
-            <h1>X</h1>
-            <h2>⚠️Disclaimer</h2>
-            <p>The website contains links to other sites. We do not take any <b> Responsibility</b> of your <b>Data</b> and <b>Security</b> on these websites  in any ways </p>
-        </div>
-    </div>
-
-   <script>
-        const popup = document.querySelector('.popup');
-        const x = document.querySelector('.popup-content h1')
-
-        window.addEventListener('load', () => {
-            popup.classList.add('showPopup');
-            popup.childNodes[1].classList.add('showPopup');
-        })
-        x.addEventListener('click', () => {
-            popup.classList.remove('showPopup');
-            popup.childNodes[1].classList.remove('showPopup');
-        })
-    </script> 
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Roadmap.html">Roadmap</a></li>
-            <li><a href="reportform.html">Report</a></li>
-            
-
-        </ul>
-
-    </div>
-
-<marquee class="notice" behavior="" direction="Left">For Better Experience On Websites Use Brave Browser To Avoid Ads:)</marquee>
-
-<br>
- <div class="container1">
-    <ul >
-        <li><div class="title">Movies</div><p class="mov">
-            <a class="links" target="_blank"  href="https://modflix.xyz/">1.Allinone.xyz
-                <br>
-            <a class="links" target="_blank"  href="https://topmovies.foo/">2.Hdmoviezflix.homes
-                <br>
-            <a class="links" target="_blank"  href="https://moviesmod.zip/">3.Moviesmod.zip
-                <br>
-            <a class="links" target="_blank" href="https://themoviesverse.cc/">4.Moviesverse.cc
-                <br>
-            <a class="links" target="_blank"  href="https://bollyflix.city/">5.Bollyflix.city
-                <br>
-            <a class="links" target="_blank"  href="https://mega.nz/folder/Pt8AHLAC#tAte3gNlNossthoHiSCL5w">6.4k Movie
-        </a></p></li>
-        <li><div class="title">Online Movies </div><p class="mov">
-
-          
-            <a class="links" target="_blank"  href="https://www.braflix.so/">1.Braflix🐐
-                <br>
-            <a class="links" target="_blank"  href="https://fmovies24.to/">2.Fmovies24
-                <br>
-            <a class="links" target="_blank"  href="https://flixhq.click/home/">3.Flixhq
-                <br>
-            <a class="links" target="_blank"  href="https://hydrahd.com/">4.Hydrahd
-                <br>
-            <a class="links" target="_blank"  href="https://nunflix.com/">5.Numflix
-                <br>
-            <a class="links" target="_blank"  href="https://primeflix.lol/">6.Primeflix
-                <br>
-
-            </a></p></li>
-
-            <li><div class="title">Anime</div><p class="mov">
-                <a class="links" target="_blank"  href="https://aniwave.to/">1.Aniwave
-                    <br>
-                <a class="links" target="_blank" href="https://hianime.to/">2.Hianime🐐
-                    <br>
-                <a class="links" target="_blank"  href="https://allanime.site/">3.Allanime.site
-                    <br>
-                <a class="links" target="_blank"  href="https://kitsunee.me/">4.Kitsunee
-                    <br>
-                <a class="links" target="_blank"  href="https://animeflix.pm/">5.Animeflix
-                   
-            </a>
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #ffff;
+    font-family:Arial, Helvetica, sans-serif;
+   
     
-            </p></li>
+}
+.popup {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+    width: clamp(300px, 90vw, 500px);
+    background-color: #fff;
+    padding: clamp(1.5rem, 100vw, 3rem);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+    position: relative;
+}
+.popup h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.popup h1:active {
+    transform: scale(.9);
+}
 
-        <li><div class="title">Games</div><p class="mov">
-            <a class="links" target="_blank"  href="https://repack-games.com/">1.Repackgames.com🐐
-                <br>
-            <a class="links" target="_blank"  href="https://www.ovagames.com/">2.Ovagames.com
-                <br>
-            <a class="links" target="_blank"  href="https://steamunlocked.net/">3.Steamunlock.net
-                <br>
-            <a class="links" target="_blank"  href="https://www.apunkagames.biz/">4.Apunkagames.biz
-                <br>
-            <a class="links" target="_blank"  href="https://www.myabandonware.com/">5.Myabandonware
-                <br>
-            <a class="links" target="_blank"  href="https://gog-games.to/">6.Goggames.to
-                <br>    
-            <a class="links" target="_blank"  href="https://steamrip.com/">7.Steamrip.com
-                <br> 
-        </a>
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    background: #0c8be0;
+    text-align: center;
+}
+.navbar li{
+    display: inline-block;
 
-        </p></li>
+}
+.navbar a{
+    border-radius: 5px;
+    text-decoration:  none;
+    color: #fff;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
 
-        <li><div class="title">Free Ai</div><p class="mov">
-            <a class="links" target="_blank"  href="https://scripai.com/">1.ScripAI
+}
 
-                <br>
-            <a class="links" target="_blank"  href="https://github.com/friuns2/BlackFriday-GPTs-Prompts">2.Jailbreak-GPT
+.navbar a:hover{
+    background-color: orange;
+}
 
-                <br>
-            <a class="links" target="_blank" href="https://chat.lmsys.org/">3.Chatbot
-                <br>
-            <a class="links" target="_blank" href="http://www.essaytyper.com/">4.Essaytyper 
-                <br>
-            <a class="links" target="_blank" href="https://quillbot.com/">5.Quillbot
-                <br>
-            <a class="links" target="_blank" href="http://www.essaytyper.com/">6.Essaytyper 
-                <br>
-            
-    </a></p></li>
-
-    <li><div class="title">Books</div><p class="mov">
-        <a class="links" target="_blank"  href="https://annas-archive.org/">1.Annas-archive🐐
-
-            <br>
-        <a class="links" target="_blank" href="https://singlelogin.re/">2.Singlelogin
-            <br>
-        <a class="links" target="_blank"  href="https://www.pdfdrive.com/">3.Pdfdrive
-
-            <br>
-        <a class="links" target="_blank"  href="https://oceanofpdf.com/">4.Oceanofpdf
-            <br>
-            
-        <a class="links" target="_blank"  href="https://archive.org/details/texts">5.Archive
-            <br>
-        
-         </a></p></li> 
-    <li><div class="title">Audio Books</div><p class="mov">
-        <a class="links" target="_blank"  href="https://hdaudiobooks.com/">1.Hdaudio🐐
-
-            <br>
-        <a class="links" target="_blank" href="https://bigaudiobooks.com/">2.Bigbooks
-            <br>
-        <a class="links" target="_blank"  href="https://hotaudiobooks.com/">3.Hotaudio
-
-            <br>
-        <a class="links" target="_blank"  href="https://bookaudiobooks.com/">4.Bookaudiobooks
-
-            <br>
-        <a class="links" target="_blank"  href="https://www.storynory.com/">5.Kidsnory
-
-            <br>
-        <a class="links" target="_blank" href="https://tokybook.com/">6.Tokybook
-            <br>
-        <a class="links" target="_blank" href="https://audioaz.com/en">7.Audioaz
-        
-
-        </a></p></li>
-        
-        <li><div class="title">Coders</div><p class="mov">
-            <a class="links" target="_blank"  href="https://freecoursesite.com/">1.Freecourcesites
+.notice{
     
-                <br>
-            <a class="links" target="_blank" href="https://www.guru99.com/">2.Guru99
-                <br>
-            <a class="links" target="_blank"  href="https://free-for.dev/#/">3.Freefordev
-    
-                <br>
-            <a class="links" target="_blank"  href="https://github.com/EbookFoundation/free-programming-books/blob/main/courses/free-courses-en.md">4.Freeprogramming
-    
-       
-    
-        </a></p></li>  
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.container1{
+
   
-        <li><div class="title">Software</div><p class="mov">
-            <a class="links" target="_blank"  href="https://allpcworlds.com/">1.Allpcworld.com
-                <br>
-            <a class="links" target="_blank"  href="https://vfxvikas.com/">2.Vfxvikas.com
-                <br>
-            <a class="links" target="_blank"  href="https://getalink.net/">3.Getlinks.net
-                <br>
-      
-               
-        </a>
+    width: 90%;
+    overflow: hidden;
+    background: #fff ;
+    margin: 20px auto;
+    padding: 20px 0px;
+}
+.container1 ul{
+    padding: 0px;
+    margin: 0px;
 
-        </p></li>
-
-        
-
-
-
-            
-        <li><div class="title">Presets & Templets</div><p class="mov">
-            <a class="links" target="_blank"  href="https://freepreset.net/">Freepresets.net
-
-                <br>
-            <a class="links" target="_blank" href="https://intro-hd.net/">Introhd.net
-                <br>
-
-        </a></p></li>
-
+}
+.container1 ul li{
     
-       <li><div class="title">Gaming TOOLS</div><p class="mov">
-            <a class="links" target="_blank"  href="https://github.com/acidicoala/Koalageddon/">1.Koalageddon
-                <br>
-            <a class="links" target="_blank"  href="https://github.com/pointfeev/CreamInstaller">2.CreamInstaller
-                <br>
-            <a class="links" target="_blank"  href="https://github.com/gibbed/SteamAchievementManager">3.Steam Achievement
-                    <br>
-            <a class="links" target="_blank"  href="https://github.com/diogomartino/steam-auto-shutdown">4.Steam Auto Shutdown
-                <br>
-            <a class="links" target="_blank"  href="https://warzoneloadout.games/">6.Warzone loadout
-                    <br>
-            <a class="links" target="_blank"  href="https://mapgenie.io/">7.Mapgenie
-                    <br>
-            <a class="links" target="_blank"  href="https://howlongtobeat.com/">5.HowLongToBeat
-                    <br>
-       
-             <!--      
-            <a class="links" target="_blank" href="#">
-                <br>
-            -->
-      </a></p></li>  
-  
-
-         
-
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 300px;
+    background: 		rgb(31, 31, 31);
+    margin: 40px 0px 0px 50px;
+    box-sizing: border-box;
+    border: 2px solid ;
     
-    </a></p></li>  <li><div class="title">Mobile</div><p class="mov">
-        <a class="links" target="_blank"  href="https://androeed.store/">1.Androeed🐐
+}
 
-        <br>
-        <a class="links" target="_blank" href="https://jhelumcorp.github.io/">2.Jhelumcorp
-        <br>
-        <a class="links" target="_blank"  href="https://hotaudiobooks.com/">3.Hotaudio
+.container1 ul li .title{
+    
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: orange;
+    text-align: center;
 
-        <br>
-        <a class="links" target="_blank"  href="https://bookaudiobooks.com/">4.Bookaudiobooks
+}
 
-        <br>
-        <a class="links" target="_blank"  href="https://www.storynory.com/">5.Kidsnory
+@media screen and (max-width:1250px){
+    .container1 ul li{
+        width: 40px;
+        margin-left: 50px;
 
-        <br>
-        <a class="links" target="_blank" href="https://tokybook.com/">6.Tokybook
-        <br>
-        <a class="links" target="_blank" href="https://audioaz.com/en">7.Audioaz
+    }
+}
+@media screen and (max-width:750px){
+    .container1{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .container1 ul li{
+        float: none;
+        width: 90%;
+        margin: 40px auto;
+    }
+}
+
+.mov{
+    
+    font-size: x-large;
+    overflow-y: auto;
+    overflow-x: auto;
+    font-weight: none;
+   
+    height: 223px;
+    overflow: hiden;
     
 
-</a></p></li> 
-        
-    </ul>
- </div>
+}
 
 
+.title{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
 
-</body> 
-</html>
 
+.links{
+    
+    letter-spacing: 1px;
+    
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;    
+}
 
+.links:hover{
+    color: rgb(193, 27, 27);
+}
 
-</select>
+.count{
+    align-items: center;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+.links {
+    color: #ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.links:hover {
+    color: orange;
+    text-decoration: underline;
+}
+.popup {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.popup.showPopup {
+    opacity: 1;
+}
