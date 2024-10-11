@@ -1,24 +1,30 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    background-color: #ffff;
-    font-family:Arial, Helvetica, sans-serif;
-    
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e2e1e0; /* Updated to white for consistency */
+    font-family: Arial, Helvetica, sans-serif;
 }
-.navbar ul{
+
+.navbar {
+    position: relative; /* Make sure navbar is positioned properly */
+    z-index: 10; /* Bring navbar above other elements */
+}
+
+.navbar ul {
     list-style: none;
-    padding: 0%;
-    margin: 0%;
-    background: #0c8be0;
+    padding: 0;
+    margin: 0;
+    background: #0c8be0; /* Navbar color */
     text-align: center;
 }
-.navbar li{
-    display: inline-block;
 
+.navbar li {
+    display: inline-block;
 }
-.navbar a{
+
+.navbar a {
     border-radius: 5px;
-    text-decoration:  none;
+    text-decoration: none;
     color: #fff;
     width: 100px;
     display: block;
@@ -27,24 +33,74 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: orange;
 }
 
+.profile-section {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: calc(100vh - 70px); /* Adjust height based on navbar height */
+}
 
+.card {
+    background: #343a40; /* Dark card color for contrast */
+    border-radius: 6px;
+    display: inline-block;
+    height: 470px;
+    width: 375px;
+    box-shadow: 0 12px 13px rgba(0, 0, 0, 0.16);
+    text-align: center; /* Center text inside the card */
+    font-family: monospace; /* Set monospace font for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation properties */
+    color: #ffffff; /* White text for visibility */
+}
 
-h1{
-    
-    font-family: 'Roboto Mono', monospace;
-    font-size: 3em;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
- text-align: center;
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3); /* Add a larger shadow */
+}
 
+.img {
+    border-radius: 100%;
+    margin-top: 47px;
+    width: 132px;
+    height: 128px;
+}
+
+.name {
+    color: #ffffff; /* Ensuring name is visible */
+}
+
+.title {
+    color: #cfd8dc; /* Lighter color for the title */
+    font-size: 16px;
+}
+
+.desc {
+    font-size: 14px;
+    margin: 16px 65px;
+    color: #b0bec5; /* Light gray for description */
+}
+
+.btn {
+    outline: none;
+    background: #19A68c; /* Button color */
+    margin-top: 15px;
+    border: none;
+    height: 40px;
+    width: 35%;
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    color: #19A68c;
+    background: #e2e1e0; /* Button hover color */
+    transition: all 400ms linear;
+    cursor: pointer;
 }
