@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="About.css"> <!-- Combined CSS file -->
     <link rel="website icon" type="png" href="logo.png">
-    <title>About us</title>
+    <title>Profile</title>
 </head>
 <body>
     <div class="navbar">
@@ -15,14 +14,27 @@
             <li><a href="About.html">About Us</a></li>
             <li><a href="Roadmap.html">Roadmap</a></li>
             <li><a href="reportform.html">Report</a></li>
-
         </ul>
-
     </div>
 
+    <div class="profile-section">
+        <div class="card">
+            <img src="profile.JPG" alt="" class="img">
+            <h1 class="name">REX</h1>
+            <p class="title">Code & Caffeine</p>
+            <div class="desc">
+                <p>Half the time, I’m not sure what I’m up to, but I’m always coding. And no, I’m not for hire—I work for fun, not deadlines!</p>
+            </div>
+            <button class="btn">Hire Me</button>
+        </div>
+    </div>
 
-    <h1>
-        Comming Soon
-    </h1>
+    <script>
+        const button = document.querySelector('.btn');
+        
+        button.addEventListener('click', () => {
+            alert("I told you, you cannot hire me!");
+        });
+    </script>
 </body>
 </html>
